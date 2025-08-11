@@ -6,7 +6,8 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
 
     res.render('admin/novedades', { // login.hbs
-        layout: 'admin/layout'
+        layout: 'admin/layout',
+        usuario: req.session.nombre
 
     });
 });
